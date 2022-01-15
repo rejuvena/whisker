@@ -4,3 +4,5 @@
 ### Features
 * Type mimicry (compile-time/runtime).
 * Access transformers (compile-time).
+
+Each feature has its own documentation.
