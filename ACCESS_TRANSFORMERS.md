@@ -11,9 +11,9 @@ Access transformers are files that give you the ability to modify the accessibil
 `=` - No change.
 
 ### Readonly
-`+r` - Changes to `readonly`.
-`-r` - Removes `readonly`.
-`=` - No change.
+* `+r` - Changes to `readonly`.
+* `-r` - Removes `readonly`.
+* `=` - No change.
 
 Readonly's meaning changes depending on targets in our case.
 
