@@ -28,3 +28,18 @@ Targets can be classes, methods, or fields. Properties, events, and operators ar
 
 ### Comments
 Comments start with `#` and are completely ignored.
+
+## Examples
+```
+# Make MyNestedField public, keep readonly status the same
+public = System.String DummyProject.MySimpleClass/MyNestedClass::MyNestedField
+
+# Make MyNestedField protected and readonly
+protected +f System.String DummyProject.MySimpleClass/MyNestedClass::MyNestedField
+
+# Make SuperSecretClass a nested public class, make sure it isn't sealed
+public -f DummyProject.MySimpleClass/SuperSecretClass
+
+# Make MyNestedClass.MyMethod(int, string) public and unsealed
+public = System.Void DummyProject.MySimpleClass/MyNestedClass::MyMethod(System.Int32,System.String)
+```
