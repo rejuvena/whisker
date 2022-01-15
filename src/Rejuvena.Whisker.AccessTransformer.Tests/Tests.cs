@@ -30,7 +30,10 @@ namespace Rejuvena.Whisker.AccessTransformer.Tests
 
             IAssemblyRewriter rewriter = new TestAssemblyRewriter();
             rewriter.AddRewriterMethod(new AccessTransformerRewriterMethod(new AccessTransformerFile(
-                TransformerNode.Parse("public = System.String DummyProject.MySimpleClass/MyNestedClass::MyNestedField")
+                TransformerNode.Parse("public +r System.String DummyProject.MySimpleClass/MyNestedClass::MyNestedField"),
+                TransformerNode.Parse("public +r System.Void DummyProject.MySimpleClass/MyNestedClass::MyMethod(System.String)"),
+                TransformerNode.Parse("private = System.Void DummyProject.MySimpleClass/MyNestedClass::MyMethod(System.Int32,System.String)"),
+            TransformerNode.Parse("public +r DummyProject.MySimpleClass/SuperSecretClass")
             )));
             rewriter.Rewrite(assembly);
 
