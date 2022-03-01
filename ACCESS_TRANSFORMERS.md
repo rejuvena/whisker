@@ -2,13 +2,13 @@
 Access transformers are files that give you the ability to modify the accessibility and readonly state of fields, methods, and classes.
 
 ### Accessors
-`public` - Changes to `public`.
-`internal` - Changes to `internal`.
-`private` - Changes to `private`.
-`protected` - Changes to `protected`.
-`private-protected` - Changes to `private protected`.
-`protected-internal` - Changes to `protected internal`.
-`=` - No change.
+* `public` - Changes to `public`.
+* `internal` - Changes to `internal`.
+* `private` - Changes to `private`.
+* `protected` - Changes to `protected`.
+* `private-protected` - Changes to `private protected`.
+* `protected-internal` - Changes to `protected internal`.
+* `=` - No change.
 
 ### Readonly
 * `+r` - Changes to `readonly`.
